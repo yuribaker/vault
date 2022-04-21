@@ -26,7 +26,7 @@ sudo bash -c "cat >/opt/splunkforwarder/etc/system/local/user-seed.conf" << EOF
 USERNAME = admin
 PASSWORD = adminadmin
 EOF
-/opt/splunkforwarder/bin/splunk restart
+# /opt/splunkforwarder/bin/splunk restart
 
-/opt/splunkforwarder/bin/splunk set deploy-poll 192.168.13.101:8089 --accept-license --answer-yes --auto-ports --no-prompt  -auth admin:adminadmin
+# /opt/splunkforwarder/bin/splunk set deploy-poll 192.168.13.101:8089 --accept-license --answer-yes --auto-ports --no-prompt  -auth admin:adminadmin
 # /opt/splunkforwarder/bin/splunk edit user admin -password $PASSWORD -auth admin:changeme
